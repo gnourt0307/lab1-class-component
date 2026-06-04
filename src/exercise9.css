@@ -1,0 +1,78 @@
+/* Styles for exercise9 layout resembling the provided image */
+:root {
+  --orange: #f08a2e;
+  --tan: #f1cfa0;
+  --dark: #222;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: var(--dark);
+}
+.hero {
+  background: var(--orange);
+  padding: 30px 0;
+}
+.hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.logo {
+  max-width: 420px;
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto 8px;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  font-weight: 600;
+}
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.95;
+}
+
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+.section {
+  margin: 28px 0;
+}
+.section h2 {
+  font-size: 28px;
+  margin: 0 0 12px;
+}
+.section-body {
+  color: #444;
+}
+
+.site-footer {
+  background: var(--tan);
+  padding: 18px 0;
+  margin-top: 30px;
+}
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  opacity: 0.95;
+}
+
+@media (min-width: 900px) {
+  .logo {
+    width: 520px;
+  }
+}
